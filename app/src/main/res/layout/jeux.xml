@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/seventh"
+            android:id="@+id/imageView5"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp" />
+
+        <Button
+            android:text="Jeu du Pendu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jeupendu"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/imageView5"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/pcc"
+            android:layout_marginTop="21dp"
+            android:id="@+id/imageView6"
+            android:layout_below="@+id/jeupendu"
+            android:layout_alignLeft="@+id/imageView5"
+            android:layout_alignStart="@+id/imageView5" />
+
+        <Button
+            android:text="Jeu Papier-Caillou-Ciseaux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:id="@+id/jeupcc"
+            android:layout_below="@+id/imageView6"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

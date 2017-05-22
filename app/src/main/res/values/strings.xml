@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="github">Github</string>
+    <string name="pendu">Pendu</string>
+    <string name="calculatrice">Calculatrice</string>
+    <string name="send">Envoyer</string>
+    <string name="rejouer">Rejouer</string>
+     <string name="gmail">Gmail</string>
+     <string-array name="Test">
+            <item>A</item>
+            <item>B</item>
+            <item>C</item>
+            <item>D</item>
+     </string-array>
+    </resources>
+
+

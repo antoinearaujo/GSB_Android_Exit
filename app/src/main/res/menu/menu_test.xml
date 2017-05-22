@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/github"
+        android:title="@string/github"
+        app:showAsAction="always" />
+    <item android:title="Gmail"
+        android:id="@+id/gmail"
+        android:showAsAction="always"
+        app:showAsAction="always" />
+    <item android:title="Jeux"
+        android:id="@+id/jeux"
+        android:showAsAction="always"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/calculatrice"
+        android:title="@string/calculatrice"
+        app:showAsAction="always" />
+
+</menu>

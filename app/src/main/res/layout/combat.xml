@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_weight="0.43">
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:id="@+id/userClass"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:lineSpacingExtra="12sp"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/scoreUser"
+            android:layout_toEndOf="@+id/scoreUser"
+            android:layout_alignBottom="@+id/joueur" />
+
+        <TextView
+            android:text="Moi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/joueur"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="147dp"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adversaryClass"
+            android:layout_weight="0.09"
+            android:fontFamily="casual"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold"
+            android:lineSpacingExtra="12sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_alignLeft="@+id/scoreAdversary"
+            android:layout_alignStart="@+id/scoreAdversary" />
+
+        <TextView
+            android:text="Adversaire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/joueur2"
+            android:layout_marginLeft="147dp"
+            android:layout_marginTop="285dp"
+            android:textStyle="normal|bold"
+            android:fontFamily="casual"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <ImageButton
+            android:layout_width="84dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/papier"
+            android:id="@+id/imageButton" />
+
+        <Button
+            android:text="Papier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/feu"
+            android:lineSpacingExtra="8sp"
+            android:textSize="24sp"
+            android:fontFamily="casual"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="50dp" />
+
+        <Button
+            android:text="Caillou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vent"
+            android:fontFamily="casual"
+            android:textSize="24sp"
+            android:lineSpacingExtra="8sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="viewStart"
+            android:layout_marginTop="150dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="57dp"
+            app:srcCompat="@drawable/ciseaux"
+            android:id="@+id/imageView2"
+            android:layout_marginTop="200dp" />
+
+        <Button
+            android:text="Ciseaux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eau"
+            android:fontFamily="casual"
+            android:textSize="24sp"
+            android:lineSpacingExtra="8sp"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="250dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/userClass"
+            android:layout_alignStart="@+id/userClass"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:id="@+id/scoreAdversary"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="normal|bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scoreUser"
+            android:layout_below="@+id/user"
+            android:layout_toRightOf="@+id/user"
+            android:layout_alignRight="@+id/textView15"
+            android:layout_alignEnd="@+id/textView15"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="normal|bold"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="81dp"
+            android:layout_height="54dp"
+            app:srcCompat="@drawable/caillou"
+            android:id="@+id/imageView"
+            android:layout_below="@+id/feu"
+            android:layout_alignRight="@+id/feu"
+            android:layout_alignEnd="@+id/feu" />
+
+        <ImageView
+            app:srcCompat="@drawable/user"
+            android:id="@+id/user"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/joueur"
+            android:layout_alignStart="@+id/joueur" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/barre2"
+            android:id="@+id/imageView14"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/eau"
+            android:layout_toEndOf="@+id/eau" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/adversary"
+            android:id="@+id/imageView7"
+            android:layout_below="@+id/imageView"
+            android:layout_alignRight="@+id/joueur2"
+            android:layout_alignEnd="@+id/joueur2"
+            android:layout_marginTop="17dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.14">
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            app:srcCompat="@drawable/piece"
+            android:id="@+id/argentImg"
+            android:adjustViewBounds="false"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="30dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/barre"
+            android:id="@+id/barre"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resultat"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="160dp"
+            android:fontFamily="casual"
+            android:textSize="30sp"
+            android:lineSpacingExtra="14sp"
+            android:textStyle="normal|bold"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textAlignment="viewStart"
+            android:layout_marginLeft="220dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="44dp"
+            android:id="@+id/argent" />
+
+        <ImageView
+            app:srcCompat="@drawable/regles"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2"
+            android:id="@+id/regles"
+            android:layout_marginTop="17dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp" />
+
+        <ImageView
+            app:srcCompat="@drawable/r"
+            android:layout_alignLeft="@+id/argentImg"
+            android:layout_alignStart="@+id/argentImg"
+            android:id="@+id/tourImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/barre2"
+            android:id="@+id/barre3"
+            android:layout_alignTop="@+id/regles"
+            android:layout_toRightOf="@+id/regles"
+            android:layout_toEndOf="@+id/regles"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
