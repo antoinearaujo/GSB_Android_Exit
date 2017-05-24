@@ -43,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent3 = new Intent(MainActivity.this, GmailActivity.class);
                 startActivity(intent3);
                 return true;
+            case R.id.creators: //si le user click sur créateurs
+                Intent intent5 = new Intent(MainActivity.this, CreatorListActivity.class);
+                startActivity(intent5);
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }

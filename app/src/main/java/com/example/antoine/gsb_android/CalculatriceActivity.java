@@ -188,7 +188,7 @@ public class CalculatriceActivity extends Activity {
     public void plusClick() {
 
         if (clicOperateur) {
-            calcul();
+            calculPlus(chiffre1, chiffre1 + Double.valueOf(ecran.getText().toString()).doubleValue());
             ecran.setText(String.valueOf(chiffre1));
         } else {
             chiffre1 = Double.valueOf(ecran.getText().toString()).doubleValue();
@@ -201,7 +201,7 @@ public class CalculatriceActivity extends Activity {
     //voici la méthode qui est  exécutée lorsqu'on clique sur le bouton -
     public void moinsClick() {
         if (clicOperateur) {
-            calcul();
+            calculMoins();
             ecran.setText(String.valueOf(chiffre1));
         } else {
             chiffre1 = Double.valueOf(ecran.getText().toString()).doubleValue();
@@ -214,7 +214,7 @@ public class CalculatriceActivity extends Activity {
     //voici la méthode qui est  exécutée lorsqu'on clique sur le bouton *
     public void mulClick() {
         if (clicOperateur) {
-            calcul();
+            calculMult();
             ecran.setText(String.valueOf(chiffre1));
         } else {
             chiffre1 = Double.valueOf(ecran.getText().toString()).doubleValue();
@@ -227,7 +227,7 @@ public class CalculatriceActivity extends Activity {
     //voici la méthode qui est  exécutée lorsqu'on clique sur le bouton /
     public void divClick() {
         if (clicOperateur) {
-            calcul();
+            calculDiv();
             ecran.setText(String.valueOf(chiffre1));
         } else {
             chiffre1 = Double.valueOf(ecran.getText().toString()).doubleValue();
@@ -239,7 +239,7 @@ public class CalculatriceActivity extends Activity {
 
     //voici la méthode qui est  exécutée lorsqu'on clique sur le bouton =
     public void egalClick() {
-        calcul();
+        calculEgal();
         update = true;
         clicOperateur = false;
     }
@@ -253,8 +253,45 @@ public class CalculatriceActivity extends Activity {
         ecran.setText("");
     }
 
+
+
+
     //Voici la méthode qui fait le calcul qui a été demandé par l'utilisateur
-    private void calcul() {
+    public double calculPlus(double pchiffre1, double pchiffre2) {
+        pchiffre1 = chiffre1;
+        pchiffre2 = chiffre1 + Double.valueOf(ecran.getText().toString()).doubleValue();
+        if (operateur.equals("+")) {
+            ecran.setText(String.valueOf(chiffre1));
+            return chiffre1 + Double.valueOf(ecran.getText().toString()).doubleValue();
+        }
+        return pchiffre1 + pchiffre2;
+    }
+
+
+    private void calculMoins() {
+        if (operateur.equals("-")) {
+            chiffre1 = chiffre1 - Double.valueOf(ecran.getText().toString()).doubleValue();
+            ecran.setText(String.valueOf(chiffre1));
+        }
+    }
+    private void calculMult() {
+        if (operateur.equals("*")) {
+            chiffre1 = chiffre1 * Double.valueOf(ecran.getText().toString()).doubleValue();
+            ecran.setText(String.valueOf(chiffre1));
+        }
+    }
+    private void calculDiv() {
+        if (operateur.equals("/")) {
+            chiffre1 = chiffre1 / Double.valueOf(ecran.getText().toString()).doubleValue();
+            ecran.setText(String.valueOf(chiffre1));
+        }
+    }
+
+
+
+
+
+    private void calculEgal() {
         if (operateur.equals("+")) {
             chiffre1 = chiffre1 + Double.valueOf(ecran.getText().toString()).doubleValue();
             ecran.setText(String.valueOf(chiffre1));
