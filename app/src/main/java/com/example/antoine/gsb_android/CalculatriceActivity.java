@@ -162,25 +162,25 @@ public class CalculatriceActivity extends AppCompatActivity {
                     operateur = "";
                     double n1 = Double.parseDouble(nb1);
                     double n2 = Double.parseDouble(nb2);
-                    addition(n1, n2);
+                    ecran.setText(String.valueOf( addition(n1, n2)));
                 }
                 if(operateur=="soustraction"){
                     operateur = "";
                     double n1 = Double.parseDouble(nb1);
                     double n2 = Double.parseDouble(nb2);
-                    soustraction(n1, n2);
+                    ecran.setText(String.valueOf( soustraction(n1, n2)));
                 }
                 if(operateur=="multiplication"){
                     operateur = "";
                     double n1 = Double.parseDouble(nb1);
                     double n2 = Double.parseDouble(nb2);
-                    multiplication(n1, n2);
+                    ecran.setText(String.valueOf( multiplication(n1, n2)));
                 }
                 if(operateur=="division"){
                     operateur = "";
                     double n1 = Double.parseDouble(nb1);
                     double n2 = Double.parseDouble(nb2);
-                    division(n1, n2);
+                    ecran.setText(String.valueOf( division(n1, n2)));
                 }
             }
         });
@@ -189,25 +189,21 @@ public class CalculatriceActivity extends AppCompatActivity {
 
     public double addition(double nb1, double nb2){
         res = nb1 + nb2;
-        ecran.setText(String.valueOf(res));
         return res;
     }
 
     public double soustraction(double nb1, double nb2){
         res = nb1 -nb2;
-        ecran.setText(String.valueOf(res));
         return res;
     }
 
     public double multiplication(double nb1, double nb2){
         res = nb1 * nb2;
-        ecran.setText(String.valueOf(res));
         return res;
     }
 
     public double division(double nb1, double nb2){
         res = nb1 / nb2;
-        ecran.setText(String.valueOf(res));
         return res;
     }
 
