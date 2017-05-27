@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name"></string>
     <string name="github">Github</string>
+    <string name="games">Games</string>
+    <string name="creators">Creators</string>
+
     <string name="pendu">Pendu</string>
     <string name="calculatrice">Calculator</string>
     <string name="send">Send</string>

@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:title="Principaux créateurs"
+    <item android:title="@string/creators"
         android:id="@+id/creators"
         android:showAsAction="ifRoom" />
     <item
@@ -12,7 +12,7 @@
         android:id="@+id/gmail"
         android:showAsAction="always"
         app:showAsAction="always" />
-    <item android:title="Jeux"
+    <item android:title="@string/games"
         android:id="@+id/jeux"
         android:showAsAction="always"
         app:showAsAction="always" />
