@@ -2,9 +2,9 @@
     <string name="app_name"></string>
     <string name="github">Github</string>
     <string name="pendu">Pendu</string>
-    <string name="calculatrice">Calculator</string>
-    <string name="send">Send</string>
-    <string name="rejouer">Replay</string>
+    <string name="calculatrice">Rechner</string>
+    <string name="send">Schicken</string>
+    <string name="rejouer">Spielen</string>
      <string name="gmail">Gmail</string>
      <string-array name="Test">
             <item>A</item>

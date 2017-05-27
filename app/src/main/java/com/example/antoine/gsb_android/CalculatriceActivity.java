@@ -9,6 +9,9 @@ import android.widget.EditText;
 
 import static java.lang.String.valueOf;
 
+/**
+ * Created by Antoine on 18/05/2017.
+ */
 public class CalculatriceActivity extends AppCompatActivity {
     //On déclare toutes les variables dont on aura besoin
     Button button0;

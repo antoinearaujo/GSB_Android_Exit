@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by Antoine on 25/05/2017.
+ * Created by Antoine on 18/05/2017.
  */
 public class CalculatriceActivityTest {
     @Test
