@@ -33,7 +33,15 @@ public class GmailActivity extends Activity {
 
         listView = (ListView) findViewById(R.id.listView1);
 
-        String[] villes = { "antoinearau@gmail.com", "julienhivert42@gmail.com", "petervalery211@gmail.com"};
+        String[] email = { "antoinearau@gmail.com",
+                "julienhivert.tt@gmail.com",
+                "petervalery211@gmail.com",
+                "dimitriguira@gmail.com",
+                "benjamin.96.prost@gmail.com",
+                "jose.santiago42400@gmail.com",
+                "jordanjayol42@gmail.com",
+                "kelignoel42@gmail.com",
+                "jimmyseux@gmail.com"};
 
         // Définition de l'adapter
         // Premier Paramètre - Context
@@ -42,7 +50,7 @@ public class GmailActivity extends Activity {
         // Quatrième Paramètre - le Tableau de Données
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, villes);
+                android.R.layout.simple_list_item_1, android.R.id.text1, email);
 
         // on assigne l'adapter à notre list
         listView.setAdapter(adapter);

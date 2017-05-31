@@ -8,7 +8,9 @@
     <string name="send">Enviar</string>
     <string name="rejouer">Repetir</string>
      <string name="gmail">Gmail</string>
-     <string-array name="Test">
+    <string name="welcome">Bienvenido a la Solicitud de GSB</string>
+
+    <string-array name="Test">
             <item>A</item>
             <item>B</item>
             <item>C</item>

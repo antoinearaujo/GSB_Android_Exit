@@ -8,6 +8,7 @@
     <string name="send">Envoyer</string>
     <string name="rejouer">Rejouer</string>
      <string name="gmail">Gmail</string>
+    <string name="welcome">Bienvenue sur l application GSB Android !</string>
      <string-array name="Test">
             <item>A</item>
             <item>B</item>

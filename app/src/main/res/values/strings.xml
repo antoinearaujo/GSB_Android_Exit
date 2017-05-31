@@ -9,6 +9,8 @@
     <string name="send">Send</string>
     <string name="rejouer">Replay</string>
      <string name="gmail">Gmail</string>
+
+    <string name="welcome">Welcome to GSB Application !</string>
      <string-array name="Test">
             <item>A</item>
             <item>B</item>

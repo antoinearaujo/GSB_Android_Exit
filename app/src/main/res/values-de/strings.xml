@@ -8,7 +8,10 @@
     <string name="send">Schicken</string>
     <string name="rejouer">Spielen</string>
      <string name="gmail">Gmail</string>
-     <string-array name="Test">
+
+    <string name="welcome">Willkommen in der GSB Anwendung</string>
+
+    <string-array name="Test">
             <item>A</item>
             <item>B</item>
             <item>C</item>
