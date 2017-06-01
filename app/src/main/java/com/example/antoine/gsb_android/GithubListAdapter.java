@@ -1,9 +1,5 @@
 package com.example.antoine.gsb_android;
 
-/**
- * Created by julien on 21/04/2017.
- */
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

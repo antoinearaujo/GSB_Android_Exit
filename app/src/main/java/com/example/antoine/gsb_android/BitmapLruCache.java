@@ -1,10 +1,5 @@
 package com.example.antoine.gsb_android;
 
-
-/**
- * Created by julien on 21/04/2017.
- */
-
 import android.graphics.Bitmap;
 import android.support.v4.util.LruCache;
 

@@ -1,9 +1,5 @@
 package com.example.antoine.gsb_android;
 
-/**
- * Created by julien on 21/04/2017.
- */
-
 import android.app.ListActivity;
 import android.content.Intent;
 import android.net.Uri;

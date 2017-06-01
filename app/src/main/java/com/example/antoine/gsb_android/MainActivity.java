@@ -47,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent5 = new Intent(MainActivity.this, CreatorListActivity.class);
                 startActivity(intent5);
                 return true;
+            case R.id.exit: //si le user click sur créateurs
+                finish();
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
